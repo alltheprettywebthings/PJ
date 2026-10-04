@@ -37,6 +37,7 @@ If you have more experience that's not on your master resume, tell any agent to 
 Want to see your current prospects? Say "Show me my current prospects".
 Get rejected? Tell an agent to update a job listing to status=rejected.
 Getting burnt out? Talk to Ellis. Just keep in mind, an AI is no substitute for a therapist.
+***Don't ask the AI to write your resume or cover letter for you***. They will, and you'll lose the human quality of your resume. Instead, ask them to suggest edits, and then make those yourself. The Evaluator, specifically, may argue about your word choice. That's part of its personality.
 
 ---
 
