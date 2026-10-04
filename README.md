@@ -1,6 +1,6 @@
 # 📖 User Guide: PJ, the AI architecture for job searching
 
-v 0.1 note: **This** is a job search architecture that's designed to be used with any AI. Right now, it can be used with on-device AI via LM-Studio, with ChatGPT desktop via a project, or with Claude Pro via a project. I'm working on simplifying it down to 3 files so it can be used with web-based Claude, ChatGPT, or whatever. v 0.2, the three file architecture, should be done shortly.
+v 0.2 note: **This** is a job search architecture that's designed to be used with any AI. 
 
 ## Install Notes:
 1. Create a folder in Google Sheets, or a database in Notion or Airtable (or similar). Remember the name of your folder or database to give to your AI.
