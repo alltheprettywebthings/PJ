@@ -19,7 +19,7 @@ You may have to adapt this to fit your preferred client.
 
 Every file is inspectable. You can see what's going on and change it if you want.
 
-**Big note**: If you use this to search jobs for you, it may not work well if you're on a Free plan. Claude restricts that pretty heavily; ChatGPT is a little more free.
+**Big note**: If you use this to search jobs for you, it may not work well if you're on a Free plan. Claude restricts that pretty heavily; ChatGPT is a little more free in its free features. I don’t recommend one over the other; this is meant to be adaptable to any AI.
 
 **Second big note**: Need to customize this? Just do it. Tell your AI how you want to change things. It's yours.
 
@@ -75,10 +75,10 @@ Once the gaps are filled, it is time to create your application materials.
 If a job listing is complex, you suspect there might be a controversy, or a company is new to you, use the **Researcher**. Because the system maintains job IDs and URLs, the Researcher can perform deep-dives into company culture, industry trends, or specific job requirements.
 
 ### Phase 5: Logging
-Tell any agent to log or update a job with a particular status; prospect, applied, not applied, rejected, whatever. Then ask the AI to tell you what your prospects are, or tell it that you have an interview, or whatever it is. All that dat goes into the CSV. You can perform meta-analyses and see what your response rate is on certain types of resumes, or certain job titles, or certain scores, if you take the CSV and put it into whatever AI or spreadsheet software you prefer.
+Tell any agent to log or update a job with a particular status; prospect, applied, not applied, rejected, whatever. Then ask the AI to tell you what your prospects are, or tell it that you have an interview, or whatever it is. All that data goes into your tracking system. You can perform meta-analyses and see what your response rate is on certain types of resumes, or certain job titles, or certain scores, using your tracking system or PJ.
 
 ### 🛡️ Emotional Support (Ellis)
 Career hunting is taxing. If you feel overwhelmed, discouraged, or just need to vent, **Ellis** is always available. Ellis will use your actual evidence, listen to your concerns, and validate you. Ellis will never do toxic positiviy. Your feelings are real. Job searches are hard. Say things like, "Ellis, I'm feeling burnt out by this job search," or "Ellis, I feel like I'm an impostor," and Ellis will listen.
 
 ### Feedback
-Want to suggest an improvement? Email [me](ben@theframeworkfile.com) and I'll take a look. This is free, but I'll provide support if I can.
+Want to suggest an improvement? Email [me](mailto:ben@theframeworkfile.com) and I'll take a look. This is free, but I'll provide support if I can.
