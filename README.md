@@ -3,7 +3,7 @@
 v 0.1 note: **This** is a job search architecture that's designed to be used with any AI. Right now, it can be used with on-device AI via LM-Studio, with ChatGPT desktop via a project, or with Claude Pro via a project. I'm working on simplifying it down to 3 files so it can be used with web-based Claude, ChatGPT, or whatever. v 0.2, the three file architecture, should be done shortly.
 
 ## Install Notes:
-1. Create a folder in Google Sheets, or a database in Notion or Airtable. Note the name of your folder or database.
+1. Create a folder in Google Sheets, or a database in Notion or Airtable (or similar). Note the name of your folder or database.
 2. Add your master resume to that folder.
 3. Download the PJ.zip file (the rest of the files are for power users to tweak or whatever).
 4. Unzip and note where the folder and files go.
