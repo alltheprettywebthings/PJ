@@ -3,7 +3,7 @@
 v 0.2 note: **This** is a job search architecture that's designed to be used with any AI. This is designed around the idea of central memory and agentic cognitive architectures. The central memory (your database or sheet) helps to avoid hallucinations. If you start to see hallucinations, just open a new chat in the same project, and tell it to read the documents to get up to speed. That will keep the context window to a minimum, which is a major cause of AI mistakes.
 
 ## Install Notes:
-**First**: If you're on a free plan, you probably have some restrictions.
+**First**: If you're on a free plan, you probably have some restrictions. This works best with an installed Claude, ChatGPT, Perplexity, etc. Web versions are so-so.
 Claude Free works really well with a Google Drive folder.
 ChatGPT Free, Desktop version, works really well with a local folder.
 You may have to adapt this to fit your preferred client.
