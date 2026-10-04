@@ -4,7 +4,7 @@ v 0.2 note: **This** is a job search architecture that's designed to be used wit
 
 ## Install Notes:
 1. Create a folder in Google Sheets, or a database in Notion or Airtable (or similar). Remember the name of your folder or database to give to your AI.
-2. Add your master resume to that folder.
+2. Add your master resume to that folder, or give it to your AI when it asks for it.
 3. Download the PJ.zip file (the rest of the files are for power users to tweak or whatever).
 4. Unzip and note where the folder and files go.
 5. Start a new project in Claude, ChatGPT or LM Studio or whatever you use.
