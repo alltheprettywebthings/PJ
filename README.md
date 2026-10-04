@@ -1,6 +1,6 @@
 # 📖 User Guide: PJ, the AI architecture for job searching
 
-v 0.2 note: **This** is a job search architecture that's designed to be used with any AI. 
+v 0.2 note: **This** is a job search architecture that's designed to be used with any AI. This is designed around the idea of central memory and agentic cognitive architectures. The central memory (your database or sheet) helps to avoid hallucinations. If you start to see hallucinations, just open a new chat in the same project, and tell it to read the documents to get up to speed. That will keep the context window to a minimum, which is a major cause of AI mistakes.
 
 ## Install Notes:
 1. Create a folder in Google Sheets, or a database in Notion or Airtable (or similar). Remember the name of your folder or database to give to your AI.
