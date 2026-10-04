@@ -25,6 +25,19 @@ The most important part of this system is your files: Your resume and evidence b
 - **The Evidence Bank** is your dynamic, conversational collection of "wins," metrics, and expanded context. At any point, you can tell an agent to add something to your evidence bank. Be specific; numbers help. Pull fresh analytics if you can.
 - **The Goal:** Every interaction with an agent should attempt to move a "vague" achievement from your resume into a "quantifiable" achievement in your evidence bank. Then, you can use those to determine where you really score against a job listing.
 
+## Pro tip(s)
+
+Use the persona names to perform tasks in quick sequence;
+- Scout, take a look at this job listing.
+- Evaluator, give me a gap analysis on that listing.
+- Editor, suggest ways that I can address those gaps.
+
+If you have more experience that's not on your master resume, tell any agent to 'store that in my evidence bank'.
+
+Want to see your current prospects? Say "Show me my current prospects".
+Get rejected? Tell an agent to update a job listing to status=rejected.
+Getting burnt out? Talk to Ellis. Just keep in mind, an AI is no substitute for a therapist.
+
 ---
 
 ## 🔄 The Workflow Lifecycle
