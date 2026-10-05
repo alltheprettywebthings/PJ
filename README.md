@@ -7,6 +7,9 @@ v 0.2 note: **This** is a job search architecture that's designed to be used wit
 Claude Free works really well with a Google Drive folder.
 ChatGPT Free, Desktop version, works really well with a local folder.
 You may have to adapt this to fit your preferred client.
+
+**Second**: Make sure you have a master resume, a writing sample, and decide where you want to store all of your files (master resume, drafts, etc).
+
 1. Create a folder in Google Drive, or a database in Notion or Airtable (or similar). Remember the name of your folder or database to give to your AI.
 2. Add your master resume to that folder, or give it to your AI when it asks for it.
 3. Download the 3 main files.
