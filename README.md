@@ -85,3 +85,5 @@ Career hunting is taxing. If you feel overwhelmed, discouraged, or just need to 
 
 ### Feedback
 Want to suggest an improvement? Email [me](mailto:ben@theframeworkfile.com) and I'll take a look. This is free, but I'll provide support if I can.
+
+Shields download count: [![Github All Releases](https://img.shields.io/github/downloads/alltheprettywebthings/PJ/total.svg)]()
