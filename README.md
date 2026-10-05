@@ -9,8 +9,8 @@ ChatGPT Free, Desktop version, works really well with a local folder.
 You may have to adapt this to fit your preferred client.
 1. Create a folder in Google Drive, or a database in Notion or Airtable (or similar). Remember the name of your folder or database to give to your AI.
 2. Add your master resume to that folder, or give it to your AI when it asks for it.
-3. Download the PJ.zip file (the rest of the files are for power users to tweak or whatever).
-4. Unzip and note where the folder and files go.
+3. Download the 3 main files.
+4. Note where you download them.
 5. Start a new project in Claude, ChatGPT or LM Studio or whatever you use.
 6. Add the files to your new project.
 7. Add a connector to your source; this is usually a + button in your chat window.
