@@ -8,9 +8,9 @@ You keep your own data. The skill holds only the logic (the personas and their r
 ## Install Notes
 Before you start, have your master resume handy. A writing sample (a cover letter or a long email) is optional, but it helps the Editor match your voice. A dedicated tracker (Airtable, Notion, or a sheet somewhere) is best for this workflow *and* for your own records, but you can start without one.
 
-1. Download the `workwrights` folder from this repo.
+1. Download the `workwrights` folder from this repo, or the .zip from the release.
 2. Install it as a skill:
-    - **Claude (web or desktop):** zip the folder so that `workwrights/` is the root of the zip, then go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
+    - **Claude (web or desktop):** take the .zip from the release, go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
     - **Claude Code:** copy the folder to `~/.claude/skills/workwrights/` (or `.claude/skills/` inside a project).
     - **Another AI:** the skill is plain Markdown. Point your AI at `workwrights/SKILL.md` and ask it to follow it.
 3. Recommended: create a dedicated project in Claude for your job search, and run everything there. Don't upload your resume into the project's knowledge; setup keeps it in your own storage instead.
