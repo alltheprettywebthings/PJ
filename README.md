@@ -8,7 +8,7 @@ You keep your own data. The skill holds only the logic (the personas and their r
 ## Install Notes
 Before you start, have your master resume handy. A writing sample (a cover letter or a long email) is optional, but it helps the Editor match your voice. A dedicated tracker (Airtable, Notion, or a sheet somewhere) is best for this workflow *and* for your own records, but you can start without one.
 
-1. Download the `workwrights` folder from this repo, or the .zip from the release.
+1. Download the .zip from the release.
 2. Install it as a skill:
     - **Claude (web or desktop):** take the .zip from the release, go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
     - **Claude Code:** copy the folder to `~/.claude/skills/workwrights/` (or `.claude/skills/` inside a project).
