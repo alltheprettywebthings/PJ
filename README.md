@@ -15,7 +15,7 @@ Before you start, have your master resume handy. A writing sample (a cover lette
     - **Another AI:** the skill is plain Markdown. Point your AI at `workwrights/SKILL.md` and ask it to follow it.
 3. Recommended: create a dedicated project in Claude for your job search, and run everything there. Don't upload your resume into the project's knowledge; setup keeps it in your own storage instead.
 4. If you want your files in a cloud drive or tracker, add a connector first (usually a + button in your chat window).
-5. Say **"Set up my job search"**. The setup guide asks where you want your workspace to live, then for your master resume. **Those are the only two required steps.** It then offers a few optional ones (your portfolio and profile links, a tracker, a voice profile, a deliverables folder). Do them now or later; it keeps track of what's left.
+5. Say 'wrks', 'workwrights', or just **"Set up my job search"**. The setup guide asks where you want your workspace to live, then for your master resume. **Those are the only two required steps.** It then offers a few optional ones (your portfolio and profile links, a tracker, a voice profile, a deliverables folder). Do them now or later; it keeps track of what's left.
 6. At the end, setup offers a short snippet for your project instructions (or a `CLAUDE.md` in Claude Code) so that future chats find your workspace automatically. Take it.
 7. Say **"Find me jobs"**. The Scout asks which titles to search (or can suggest some from your resume), then your location, seniority and job boards. Follow the instructions. Make choices. Have fun.
 
