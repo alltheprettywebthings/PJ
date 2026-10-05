@@ -1,4 +1,4 @@
-# 📖 Workwrights, the modular career intelligence system
+# 📖 Workwrights, a modular career intelligence system
 
 v 0.4 note: **This** is a job search architecture that's designed to be used with any AI. This particular version is packaged as a Claude Skill called **Workwrights** ("wrks" for short when you're chatting): the `workwrights/` folder in this repo.
 
