@@ -3,11 +3,14 @@
 *This is the single source of truth for your personalized system configuration. Agents will read this file to determine how to interact with your specific databases and tracking tools.*
 
 ## Setup Status
-*Written by the Concierge. `setup_completed: true` means the required core (data placement and the master resume) is done. `setup_deferred` lists optional steps the user put off, such as the tracker, the voice profile or the digital identity links.*
+*Written by the Concierge. `setup_completed: true` means the required core (data placement and the master resume) is done. `setup_deferred` lists optional steps the user put off, such as the tracker, the voice profile or the digital identity links. `search_mode` is `full` or `light` (see the Scout); it defaults to `full` when missing. `skill_version` and `schema_version` record which version of Workwrights last updated this workspace, so a newer skill can bring an older workspace up to date.*
 
 ```
 setup_completed: false
 setup_deferred: none
+search_mode: full
+skill_version: [written by the Concierge]
+schema_version: [written by the Concierge]
 ```
 
 ## 1. Tracking System (Job Applications)
