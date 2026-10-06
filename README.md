@@ -104,4 +104,4 @@ Tell any agent to log or update a job with a particular status; prospect, applie
 Career hunting is taxing. If you feel overwhelmed, discouraged, or just need to vent, **Ellis** is always available. Ellis will use your actual evidence, listen to your concerns, and validate you. Ellis will never do toxic positivity. Your feelings are real. Job searches are hard. Say things like, "Ellis, I'm feeling burnt out by this job search," or "Ellis, I feel like I'm an impostor," and Ellis will listen.
 
 ### Feedback
-Want to suggest an improvement? Email [me](mailto:ben@theframeworkfile.com) and I'll take a look. This is free, but I'll provide support if I can.
+Want to suggest an improvement? Email [me](mailto:43lgngb0@anonaddy.me) and I'll take a look. This is free, but I'll provide support if I can.
