@@ -1,6 +1,8 @@
-# 📖 Workwrights, a modular career intelligence system
+# 📖 Workwrights, the modular career intelligence system
 
-v 0.4 note: **This** is a job search architecture that's designed to be used with any AI. This particular version is packaged as a Claude Skill called **Workwrights** ("wrks" for short when you're chatting): the `workwrights/` folder in this repo.
+v 0.6 note: Added a light search mode to help users of free AI plans reduce their token usage by Scout. To switch to light search, say "switch to light search".
+
+v 0.5 note: Added versioning, an update method, and logic to flag low-quality job postings. To upgrade, just attach the new skill, ask your AI to scan it, and say "wrks"; it should give you some update options.
 
 ## The idea in one paragraph
 You keep your own data. The skill holds only the logic (the personas and their rules) and blank templates. Your master resume, evidence bank, job ledger, reports and settings live in a workspace folder that **you** choose and control: a folder on your computer, a synced folder, or a cloud drive. Nothing personal is ever written into the skill itself.
@@ -8,14 +10,14 @@ You keep your own data. The skill holds only the logic (the personas and their r
 ## Install Notes
 Before you start, have your master resume handy. A writing sample (a cover letter or a long email) is optional, but it helps the Editor match your voice. A dedicated tracker (Airtable, Notion, or a sheet somewhere) is best for this workflow *and* for your own records, but you can start without one.
 
-1. Download [the .zip](https://github.com/alltheprettywebthings/Workwrights/releases/tag/v0.4.0) from the latest release.
+1. Download the `workwrights` folder from this repo.
 2. Install it as a skill:
-    - **Claude (web or desktop):** take the .zip from the release, go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
+    - **Claude (web or desktop):** zip the folder so that `workwrights/` is the root of the zip, then go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
     - **Claude Code:** copy the folder to `~/.claude/skills/workwrights/` (or `.claude/skills/` inside a project).
     - **Another AI:** the skill is plain Markdown. Point your AI at `workwrights/SKILL.md` and ask it to follow it.
 3. Recommended: create a dedicated project in Claude for your job search, and run everything there. Don't upload your resume into the project's knowledge; setup keeps it in your own storage instead.
 4. If you want your files in a cloud drive or tracker, add a connector first (usually a + button in your chat window).
-5. Say 'wrks', 'workwrights', or just **"Set up my job search"**. The setup guide asks where you want your workspace to live, then for your master resume. **Those are the only two required steps.** It then offers a few optional ones (your portfolio and profile links, a tracker, a voice profile, a deliverables folder). Do them now or later; it keeps track of what's left.
+5. Say **"Set up my job search"**. The setup guide asks where you want your workspace to live, then for your master resume. **Those are the only two required steps.** It then offers a few optional ones (your portfolio and profile links, a tracker, a voice profile, a deliverables folder). Do them now or later; it keeps track of what's left.
 6. At the end, setup offers a short snippet for your project instructions (or a `CLAUDE.md` in Claude Code) so that future chats find your workspace automatically. Take it.
 7. Say **"Find me jobs"**. The Scout asks which titles to search (or can suggest some from your resume), then your location, seniority and job boards. Follow the instructions. Make choices. Have fun.
 
@@ -92,12 +94,10 @@ Once the gaps are filled, it is time to create your application materials.
 If a job listing is complex, you suspect there might be a controversy, or a company is new to you, use the **Researcher**. Because the system maintains job IDs and URLs, the Researcher can perform deep-dives into company culture, industry trends, or specific job requirements.
 
 ### Phase 5: Logging
-Tell any agent to log or update a job with a particular status; prospect, applied, not applied, rejected, whatever. Then ask the AI to tell you what your prospects are, or tell it that you have an interview, or whatever it is. All that data goes into your tracking system (or, if you skipped the tracker, into the ledger in your workspace). You can perform meta-analyses and see what your response rate is on certain types of resumes, or certain job titles, or certain scores, using your tracking system or AI chat.
+Tell any agent to log or update a job with a particular status; prospect, applied, not applied, rejected, whatever. Then ask the AI to tell you what your prospects are, or tell it that you have an interview, or whatever it is. All that data goes into your tracking system (or, if you skipped the tracker, into the ledger in your workspace). You can perform meta-analyses and see what your response rate is on certain types of resumes, or certain job titles, or certain scores, using your tracking system or PJ.
 
 ### 🛡️ Emotional Support (Ellis)
 Career hunting is taxing. If you feel overwhelmed, discouraged, or just need to vent, **Ellis** is always available. Ellis will use your actual evidence, listen to your concerns, and validate you. Ellis will never do toxic positivity. Your feelings are real. Job searches are hard. Say things like, "Ellis, I'm feeling burnt out by this job search," or "Ellis, I feel like I'm an impostor," and Ellis will listen.
 
 ### Feedback
-Want to suggest an improvement? Email [me](mailto:43lgngb0@anonaddy.me) and I'll take a look. This is free, but I'll provide support if I can.
-
-<img alt="GitHub Downloads (all assets, latest release)" src="https://img.shields.io/github/downloads/alltheprettywebthings/Workwrights/latest/total">
+Want to suggest an improvement? Email [me](mailto:ben@theframeworkfile.com) and I'll take a look. This is free, but I'll provide support if I can.
