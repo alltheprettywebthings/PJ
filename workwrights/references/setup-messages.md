@@ -108,5 +108,17 @@ If the user wants suggestions:
 **Job boards.**
 > Are there job boards you want prioritized, such as LinkedIn, Indeed or Glassdoor? If you're not sure, I'd suggest HiringCafe as an efficient place to start.
 
+**Search effort.**
+> Searching the web is the most demanding thing I do, and it can use up a good part of a day's allowance on a free plan. Are you on a free plan, or do you often hit usage limits? If so, I'd suggest light mode: I write your search terms and links, you open them and paste the postings back, and I score them for you. Otherwise I'll search for you directly. Either way you can change this any time by saying "switch to light search" or "switch to full search".
+
+If light mode:
+> Light mode is on. Here are the searches for [board]: [terms and link]. Open them, then paste any postings that look interesting, or the links, and I'll score them.
+
+Before a large run in full mode:
+> This search will check about [n] listings across [n] boards, which may use a lot of your allowance. Shall I go ahead, or start smaller?
+
+If a run stops early:
+> I stopped after [source]. I saved [n] listings and your results so far. Say "continue my search" to pick up with [remaining sources].
+
 **After saving.**
 > I've saved your searches, so next time I can repeat them without asking again. I'll show listings that score 55 or higher out of 100, and read the full posting for any at 65 or higher. Running your first search now.
