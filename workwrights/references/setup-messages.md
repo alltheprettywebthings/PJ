@@ -114,6 +114,9 @@ If the user wants suggestions:
 If light mode:
 > Light mode is on. Here are the searches for [board]: [terms and link]. Open them, then paste any postings that look interesting, or the links, and I'll score them.
 
+After scoring pasted listings in light mode:
+> [Ranked list: score and one line each.] A full report on any of these reads your resume, your evidence bank and the whole posting, so it uses several times more of your allowance than the short scores above. Tell me which ones are worth it and I'll run those.
+
 Before a large run in full mode:
 > This search will check about [n] listings across [n] boards, which may use a lot of your allowance. Shall I go ahead, or start smaller?
 

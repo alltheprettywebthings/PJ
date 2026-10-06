@@ -40,7 +40,7 @@ The aim is to spend the user's allowance on scoring and tailoring, not browsing.
 1. **Give them the search.** For each chosen title and board in `search_sources.md`, write ready-to-use search terms and, where the board's URL format is known from `search_sources.md`, the link to open. Do not guess a URL format.
 2. **Triage what they bring.** Ask them to paste postings or links. Treat each as user-supplied (`sources: ["user_pasted"]`), snapshot it verbatim, score it, and add the ledger line as usual.
 3. **If you do browse** (the user asks, or has no other way): one board, up to about ten new listings, then stop and offer more.
-4. **Short scoring.** Show each listing as a score and one line. Run the Evaluator's full report only when the user asks for it for a specific listing.
+4. **Short scoring.** Show each listing as a score and one line. Run the Evaluator's full report only when the user asks for it for a specific listing. When you present the scored list, add one plain sentence saying that a full report reads the resume, the evidence bank and the whole posting, so it uses several times more of their allowance than a short score, and invite them to pick the listings worth it. Do not quote numbers or percentages of usage, because you cannot know them.
 5. Everything else (ledger, tracker approval, "What's missing") works as in full mode.
 
 ### Large runs (full mode)
