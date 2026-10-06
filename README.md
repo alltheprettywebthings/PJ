@@ -99,3 +99,5 @@ Career hunting is taxing. If you feel overwhelmed, discouraged, or just need to 
 
 ### Feedback
 Want to suggest an improvement? Email [me](mailto:43lgngb0@anonaddy.me) and I'll take a look. This is free, but I'll provide support if I can.
+
+<img alt="GitHub Downloads (all assets, latest release)" src="https://img.shields.io/github/downloads/alltheprettywebthings/Workwrights/latest/total">
