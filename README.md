@@ -1,5 +1,9 @@
 # 📖 Workwrights, the modular career intelligence system
 
+v 0.8 note: Qualitative messages added to Scout and Evaluator to remind users that certain actions can use a large amount of their usage allowance.
+
+v 0.7 note: When getting suggestions for tailored resume edits, the suggestions are now ranked by relevance.
+
 v 0.6 note: Added a light search mode to help users of free AI plans reduce their token usage by Scout. To switch to light search, say "switch to light search".
 
 v 0.5 note: Added versioning, an update method, and logic to flag low-quality job postings. To upgrade, just attach the new skill, ask your AI to scan it, and say "wrks"; it should give you some update options.
