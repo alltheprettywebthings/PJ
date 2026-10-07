@@ -1,0 +1,53 @@
+title: Workwrights Docs
+description: Docs for Workwrights, the modular career intelligence system. Your files, your voice.
+tagline: A modular career intelligence system. Your files, your voice.
+lang: en
+
+# Where the site lives. Hosted on GitHub Pages: the deploy workflow sets baseurl
+# automatically ("/<repo>" on github.io, "" on a custom domain). Leave baseurl empty here.
+# Set url once you know the final address, e.g. "https://docs.example.com" — it's used
+# for the sitemap and social previews only.
+url: ""
+baseurl: ""
+
+# Shown in the footer and the version label. Pseudonym on purpose: never add a personal name.
+copyright_holder: alltheprettywebthings
+docs_version: "0.9"
+
+# Project links. (Named "links", not "github", so it never clashes with GitHub's own site.github data.)
+links:
+  repo: https://github.com/alltheprettywebthings/Workwrights
+  wiki: https://github.com/alltheprettywebthings/Workwrights/wiki
+  issues: https://github.com/alltheprettywebthings/Workwrights/issues
+  license: https://github.com/alltheprettywebthings/Workwrights/blob/main/LICENSE
+  # Each page's "Edit this page" link is <docs_edit_base>/<page path>. Empty = link hidden.
+  docs_edit_base: https://github.com/alltheprettywebthings/Workwrights/edit/main/docs
+
+feedback_email: 43lgngb0@anonaddy.me
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: false
+
+permalink: pretty
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: doc }
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - .github

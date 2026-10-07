@@ -1,0 +1,14 @@
+{%- include navflat.html -%}
+{%- assign idx = -1 -%}
+{%- for u in nav_urls -%}{%- if u == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- if idx >= 0 -%}
+{%- assign prev = idx | minus: 1 -%}{%- assign next = idx | plus: 1 -%}{%- assign last = nav_urls.size | minus: 1 -%}
+<nav class="ww-pager" aria-label="Previous and next pages">
+  {%- if prev >= 0 %}
+  <a class="ww-pager__link ww-pager__link--prev" href="{{ nav_urls[prev] | relative_url }}"><span class="ww-pager__dir">{% include icon.html name="arrow-left" %}Previous</span><span class="ww-pager__title">{{ nav_titles[prev] }}</span></a>
+  {%- endif %}
+  {%- if next <= last %}
+  <a class="ww-pager__link ww-pager__link--next" href="{{ nav_urls[next] | relative_url }}"><span class="ww-pager__dir">Next{% include icon.html name="arrow-right" %}</span><span class="ww-pager__title">{{ nav_titles[next] }}</span></a>
+  {%- endif %}
+</nav>
+{%- endif -%}

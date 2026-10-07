@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+<a class="ww-skip" href="#main">Skip to content</a>
+<div class="ww-layout">
+  {% include topbar.html %}
+  {% include sidenav.html %}
+  <main id="main" tabindex="-1">
+    {% include breadcrumbs.html %}
+    <article class="ww-prose">
+      <h1>{{ page.title }}</h1>
+      {%- if page.lede %}
+      <p class="ww-lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {%- endif %}
+      {{ content }}
+    </article>
+    {% include pager.html %}
+  </main>
+  {%- unless page.toc == false %}
+  <nav class="ww-toc" aria-labelledby="toc-label" data-toc hidden>
+    <p class="ww-toc__label" id="toc-label">On this page</p>
+    <ol></ol>
+    <a class="ww-toc__top" href="#main">Back to top</a>
+  </nav>
+  {%- endunless %}
+  {% include footer.html %}
+</div>
+<div class="ww-scrim" data-drawer-scrim hidden></div>
+</body>
+</html>

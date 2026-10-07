@@ -1,0 +1,31 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+sitemap: false
+---
+<main class="ww-404" id="main" tabindex="-1">
+  <svg class="ww-404__art" viewBox="0 0 300 300" aria-hidden="true">
+    <polygon class="shadow" points="214,72 114,72 64,159 114,246 214,246 264,159"/>
+    <polygon class="nut" points="194,52 94,52 44,139 94,226 194,226 244,139"/>
+    <circle class="hole" cx="144" cy="139" r="50"/>
+    <circle class="bolt" cx="232" cy="262" r="30"/>
+  </svg>
+  <div class="ww-404__text">
+    <p class="ww-404__eyebrow">404 · Page not found</p>
+    <h1 class="ww-404__title">This page came loose</h1>
+    <p class="ww-404__lede">The link may be old, or the page may have moved when the docs were updated. Nothing in your workspace is affected.</p>
+    <div class="ww-404__actions">
+      <a class="ww-button ww-button--primary" href="{{ '/' | relative_url }}">Go to the docs home</a>
+      <a class="ww-button ww-button--secondary" href="{{ site.links.issues }}/new?title=Broken%20docs%20link">Report a broken link</a>
+    </div>
+    <div class="ww-404__try">
+      <p class="ww-404__eyebrow">Or try</p>
+      <ul>
+        <li><a href="{{ '/getting-started/install/' | relative_url }}">Install Workwrights</a></li>
+        <li><a href="{{ '/agents/' | relative_url }}">The agents</a></li>
+        <li><a href="{{ '/workflow/' | relative_url }}">The workflow</a></li>
+      </ul>
+    </div>
+  </div>
+</main>

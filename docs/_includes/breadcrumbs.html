@@ -1,0 +1,14 @@
+{%- include navflat.html -%}
+{%- assign idx = -1 -%}
+{%- for u in nav_urls -%}{%- if u == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- if idx > 0 -%}
+<nav class="ww-crumbs" aria-label="Breadcrumb"><ol>
+  <li><a href="{{ '/' | relative_url }}">Docs</a></li>
+  <li><span>{{ nav_sections[idx] }}</span></li>
+  {%- assign parent = nav_parents[idx] -%}
+  {%- if parent != "" -%}
+    {%- for t in nav_titles -%}{%- if t == parent -%}<li><a href="{{ nav_urls[forloop.index0] | relative_url }}">{{ parent }}</a></li>{%- endif -%}{%- endfor -%}
+  {%- endif %}
+  <li><span aria-current="page">{{ nav_titles[idx] }}</span></li>
+</ol></nav>
+{%- endif -%}

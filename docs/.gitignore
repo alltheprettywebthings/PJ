@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+.sass-cache/
+.DS_Store
+# Not committed: a lockfile made on a Mac lacks the Linux platform the Pages build needs.
+Gemfile.lock

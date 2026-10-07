@@ -1,0 +1,30 @@
+# The SideNav, in reading order. The Pager (previous/next) follows this order too.
+- section: Getting started
+  pages:
+    - { title: Introduction, url: / }
+    - { title: Install, url: /getting-started/install/ }
+    - { title: Your workspace, url: /getting-started/workspace/ }
+    - { title: The evidence bank, url: /getting-started/evidence-bank/ }
+- section: How it works
+  pages:
+    - { title: The workflow, url: /workflow/ }
+    - title: The agents
+      url: /agents/
+      children:
+        - { title: Scout, url: /agents/scout/ }
+        - { title: Evaluator, url: /agents/evaluator/ }
+        - { title: Editor, url: /agents/editor/ }
+        - { title: Researcher, url: /agents/researcher/ }
+        - { title: Ellis, url: /agents/ellis/ }
+- section: Workflow tips
+  pages:
+    - { title: Set up your storage, url: /tips/storage/ }
+    - { title: Find more jobs, url: /tips/discovery/ }
+    - { title: Find more evidence, url: /tips/evidence/ }
+    - { title: Salary ranges, url: /tips/salary/ }
+    - { title: Use a free plan, url: /tips/free-plan/ }
+    - { title: Quick commands, url: /tips/commands/ }
+- section: Reference
+  pages:
+    - { title: Update Workwrights, url: /updating/ }
+    - { title: Changelog, url: /changelog/ }

@@ -1,0 +1,62 @@
+/* Site-level glue: things the design system leaves to the site. */
+html{scroll-padding-top:calc(64px + var(--space-6))}
+body{margin:0;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+main:focus{outline:none}
+
+/* Skip link */
+.ww-skip{position:absolute;left:var(--space-4);top:-100px;z-index:100;padding:var(--space-2) var(--space-4);background:var(--paper);color:var(--ink);border:2px solid var(--ink);font-family:var(--font-sans);font-weight:600;text-decoration:none}
+.ww-skip:focus{top:var(--space-3);outline:2px solid var(--focus);outline-offset:2px}
+
+/* Theme toggle shows the theme you'd switch TO */
+.ww-theme-icon{display:inline-flex}
+.ww-theme-icon--moon{display:none}
+[data-theme="dark"] .ww-theme-icon--sun{display:none}
+[data-theme="dark"] .ww-theme-icon--moon{display:inline-flex}
+
+/* Layout: footer row, and gutters for main */
+.ww-layout{grid-template-rows:64px 1fr auto}
+.ww-layout>main{min-width:0}
+@media (max-width:1199px){.ww-layout>main{padding-right:var(--space-8)}}
+@media (max-width:767px){.ww-layout>main{padding-right:var(--space-4)}}
+.ww-layout>.ww-crumbs,main>.ww-crumbs{margin-bottom:var(--space-4)}
+.ww-plain .ww-topbar{position:sticky;top:0;z-index:30}
+
+/* Drawer scrim (mobile nav) */
+.ww-scrim{position:fixed;inset:64px 0 0 0;background:rgb(0 0 0 / .35);z-index:15}
+.ww-scrim[hidden]{display:none}
+@media (min-width:768px){.ww-scrim{display:none}}
+body.ww-drawer-open{overflow:hidden}
+
+/* Rouge (Markdown code fences) → CodeBlock look. JS adds the bar and Copy button. */
+.ww-prose div.highlighter-rouge{margin-top:var(--space-6);border:1px solid var(--rule-strong);background:var(--paper-sunk);font-family:var(--font-sans)}
+.ww-prose div.highlighter-rouge+*{margin-top:var(--space-6)}
+.ww-prose div.highlighter-rouge .highlight{margin:0;background:none}
+.ww-prose pre.highlight{margin:0;padding:var(--space-4);overflow-x:auto;font-family:var(--font-mono);font-size:15px;line-height:24px;color:var(--ink);background:none;tab-size:2}
+.ww-prose pre.highlight:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+.ww-prose pre.highlight code{padding:0;background:none;border-radius:0;font-size:inherit}
+.highlight .k,.highlight .kd,.highlight .kn,.highlight .kr,.highlight .kt,.highlight .o,.highlight .ow{color:var(--syntax-keyword)}
+.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sh,.highlight .sx,.highlight .sr{color:var(--syntax-string)}
+.highlight .nf,.highlight .nb,.highlight .fm,.highlight .nx,.highlight .na{color:var(--syntax-function)}
+.highlight .m,.highlight .mi,.highlight .mf,.highlight .mh,.highlight .kc,.highlight .no{color:var(--syntax-number)}
+.highlight .c,.highlight .c1,.highlight .cm,.highlight .cs,.highlight .cp{color:var(--syntax-comment);font-style:italic}
+.highlight .gd,.highlight .err{color:var(--syntax-error)}
+.highlight .gp{color:var(--ink-muted);user-select:none}
+.ww-code__bar--rouge{padding-left:0}
+
+/* Quotes for what you say to an agent */
+.ww-say{font-weight:600}
+
+/* Markdown tables get the Table component look */
+.ww-prose table{border-collapse:collapse;width:100%;font-family:var(--font-sans);font-size:15px;line-height:22px}
+.ww-prose th{text-align:left;font-weight:600;background:var(--paper-raised);border-bottom:2px solid var(--ink);padding:var(--space-2) var(--space-3)}
+.ww-prose td{padding:10px var(--space-3);border-bottom:1px solid var(--rule);vertical-align:top}
+.ww-prose td code{white-space:nowrap}
+.ww-prose>.ww-table-wrap+*{margin-top:var(--space-6)}
+/* Quoted things to say to an agent */
+.ww-prose blockquote{color:var(--ink)}
+.ww-prose blockquote p{font-weight:600}
+/* Tabs inside a step */
+.ww-steps .ww-tabs{margin-top:var(--space-2)}
+.ww-steps .ww-tabs__panel p{margin:0}
+/* Name columns (agent tables) don't wrap */
+.ww-prose td:first-child:has(> a){white-space:nowrap}

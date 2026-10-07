@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1500 1500">
+  <!-- Generator: Adobe Illustrator 30.8.2, SVG Export Plug-In . SVG Version: 2.1.4 Build 7)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #2a2119;
+      }
+
+      .st1 {
+        fill: #a94825;
+      }
+
+      .st2 {
+        fill: #2c5a75;
+      }
+    </style>
+  </defs>
+  <g id="shadow">
+    <polygon class="st2" points="1104.54 366.15 602.66 366.15 351.72 800.79 602.66 1235.44 1104.54 1235.44 1355.49 800.79 1104.54 366.15"/>
+  </g>
+  <g id="nut">
+    <polygon class="st1" points="1000.25 315.05 498.36 315.05 247.42 749.7 498.36 1184.34 1000.25 1184.34 1251.19 749.7 1000.25 315.05"/>
+  </g>
+  <g id="bolt">
+    <circle class="st0" cx="749.3" cy="749.7" r="250"/>
+  </g>
+</svg>
