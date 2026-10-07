@@ -5,7 +5,7 @@ description: "Workwrights (wrks): run a job search from your own files. Set up a
 
 # Workwrights
 
-**Skill version:** 0.8 · **Workspace schema:** 1 (bump the version with every release; bump the schema only when a workspace file's structure changes, see `references/migrations.md`)
+**Skill version:** 0.9 · **Workspace schema:** 1 (bump the version with every release; bump the schema only when a workspace file's structure changes, see `references/migrations.md`)
 
 The user may call this system "Workwrights", "wrks", or "the job search system". All three mean this skill. Its personas are the wrights, each with a craft of their own.
 
