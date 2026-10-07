@@ -7,8 +7,8 @@ lang: en
 # automatically ("/<repo>" on github.io, "" on a custom domain). Leave baseurl empty here.
 # Set url once you know the final address, e.g. "https://docs.example.com" — it's used
 # for the sitemap and social previews only.
-url: "https://workwrights.com"
-baseurl: "https://workwrights.com"
+url: "https://alltheprettywebthings.github.io/Workwrights/"
+baseurl: "https://alltheprettywebthings.github.io/Workwrights/"
 
 # Shown in the footer and the version label. Pseudonym on purpose: never add a personal name.
 copyright_holder: alltheprettywebthings
