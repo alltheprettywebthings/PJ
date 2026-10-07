@@ -1,0 +1,25 @@
+<nav class="ww-sidenav" id="sidenav" aria-label="Documentation">
+  {%- for s in site.data.nav %}
+  <div class="ww-sidenav__section">
+    <p class="ww-sidenav__label">{{ s.section }}</p>
+    <ul>
+      {%- for p in s.pages %}
+        {%- if p.children %}
+          {%- assign open = false -%}
+          {%- if page.url == p.url -%}{%- assign open = true -%}{%- endif -%}
+          {%- for c in p.children -%}{%- if page.url == c.url -%}{%- assign open = true -%}{%- endif -%}{%- endfor %}
+      <li><details class="ww-sidenav__group"{% if open %} open{% endif %}><summary>{{ p.title }}{% include icon.html name="chevron-right" %}</summary>
+        <ul>
+          <li><a class="ww-sidenav__link" href="{{ p.url | relative_url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>Overview</a></li>
+          {%- for c in p.children %}
+          <li><a class="ww-sidenav__link" href="{{ c.url | relative_url }}"{% if page.url == c.url %} aria-current="page"{% endif %}>{{ c.title }}</a></li>
+          {%- endfor %}
+        </ul></details></li>
+        {%- else %}
+      <li><a class="ww-sidenav__link" href="{{ p.url | relative_url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>{{ p.title }}</a></li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endfor %}
+</nav>

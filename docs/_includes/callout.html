@@ -1,0 +1,14 @@
+{%- comment -%}
+  Usage:
+  {% capture body %}Markdown here.{% endcapture %}
+  {% include callout.html kind="tip" title="Pro tip" body=body %}
+  kind: note (default) | tip | warning | danger
+{%- endcomment -%}
+{%- assign kind = include.kind | default: "note" -%}
+{%- assign title = include.title -%}{%- if title == nil or title == "" -%}{%- assign title = kind | capitalize -%}{%- endif -%}
+<aside class="ww-callout{% if kind != 'note' %} ww-callout--{{ kind }}{% endif %}" role="note" aria-label="{{ title }}">
+  {%- assign callout_icon = "ww-" | append: kind -%}
+  {% include icon.html name=callout_icon %}
+  <p class="ww-callout__title">{{ title }}</p>
+  <div class="ww-callout__body">{{ include.body | markdownify }}</div>
+</aside>

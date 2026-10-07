@@ -1,0 +1,5 @@
+# TopBar section links. "match" marks the link current when the page URL starts with it.
+- { title: Get started, url: /, match: [/getting-started/] , home: true }
+- { title: How it works, url: /workflow/, match: [/workflow/, /agents/] }
+- { title: Tips, url: /tips/storage/, match: [/tips/] }
+- { title: Changelog, url: /changelog/, match: [/changelog/] }

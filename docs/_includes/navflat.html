@@ -1,0 +1,8 @@
+{%- comment -%} Flattens _data/nav.yml into parallel arrays: nav_urls, nav_titles, nav_sections, nav_parents. {%- endcomment -%}
+{%- assign nav_urls = "" | split: "" -%}{%- assign nav_titles = "" | split: "" -%}{%- assign nav_sections = "" | split: "" -%}{%- assign nav_parents = "" | split: "" -%}
+{%- for s in site.data.nav -%}{%- for p in s.pages -%}
+  {%- assign nav_urls = nav_urls | push: p.url -%}{%- assign nav_titles = nav_titles | push: p.title -%}{%- assign nav_sections = nav_sections | push: s.section -%}{%- assign nav_parents = nav_parents | push: "" -%}
+  {%- for c in p.children -%}
+    {%- assign nav_urls = nav_urls | push: c.url -%}{%- assign nav_titles = nav_titles | push: c.title -%}{%- assign nav_sections = nav_sections | push: s.section -%}{%- assign nav_parents = nav_parents | push: p.title -%}
+  {%- endfor -%}
+{%- endfor -%}{%- endfor -%}

@@ -1,0 +1,21 @@
+<header class="ww-topbar">
+  <button class="ww-control ww-topbar__menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidenav" data-drawer-toggle>{% include icon.html name="menu" %}</button>
+  <a class="ww-topbar__brand" href="{{ '/' | relative_url }}">
+    <img class="ww-logo ww-logo--light" src="{{ '/assets/img/ww-logo-light.svg' | relative_url }}" alt="" width="40" height="40">
+    <img class="ww-logo ww-logo--dark" src="{{ '/assets/img/ww-logo-dark.svg' | relative_url }}" alt="" width="40" height="40">
+    <span class="ww-topbar__name">Workwrights</span><span class="ww-topbar__sub">Docs</span>
+  </a>
+  <nav class="ww-topbar__nav" aria-label="Sections">
+    {%- for item in site.data.topnav -%}
+      {%- assign current = false -%}
+      {%- if item.home and page.url == '/' -%}{%- assign current = true -%}{%- endif -%}
+      {%- for m in item.match -%}{%- if page.url contains m -%}{%- assign current = true -%}{%- endif -%}{%- endfor -%}
+      <a class="ww-topbar__link" href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {%- endfor -%}
+  </nav>
+  <div class="ww-topbar__tools">
+    <a class="ww-control ww-control--version" href="{{ '/changelog/' | relative_url }}" aria-label="Docs for version {{ site.docs_version }}, see changelog">v{{ site.docs_version }}</a>
+    <a class="ww-control" href="{{ site.links.repo }}">GitHub{% include icon.html name="external-link" %}</a>
+    <button class="ww-control" type="button" data-theme-toggle aria-label="Switch to dark theme"><span class="ww-theme-icon ww-theme-icon--sun">{% include icon.html name="sun" %}</span><span class="ww-theme-icon ww-theme-icon--moon">{% include icon.html name="moon" %}</span></button>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+<footer class="ww-footer">
+  <div class="ww-footer__top">
+    <div>
+      <a class="ww-footer__brand" href="{{ '/' | relative_url }}">
+        <img class="ww-logo ww-logo--light" src="{{ '/assets/img/ww-logo-light.svg' | relative_url }}" alt="" width="32" height="32">
+        <img class="ww-logo ww-logo--dark" src="{{ '/assets/img/ww-logo-dark.svg' | relative_url }}" alt="" width="32" height="32">Workwrights</a>
+      <p class="ww-footer__tagline">{{ site.tagline }}</p>
+    </div>
+    <nav aria-labelledby="ft-docs">
+      <p class="ww-footer__heading" id="ft-docs">Docs</p>
+      <ul>
+        <li><a class="ww-footer__link" href="{{ '/getting-started/install/' | relative_url }}">Install</a></li>
+        <li><a class="ww-footer__link" href="{{ '/agents/' | relative_url }}">The agents</a></li>
+        <li><a class="ww-footer__link" href="{{ '/tips/storage/' | relative_url }}">Workflow tips</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="ft-project">
+      <p class="ww-footer__heading" id="ft-project">Project</p>
+      <ul>
+        <li><a class="ww-footer__link" href="{{ site.links.repo }}">GitHub</a></li>
+        <li><a class="ww-footer__link" href="{{ site.links.issues }}">Report an issue</a></li>
+        <li><a class="ww-footer__link" href="mailto:{{ site.feedback_email }}">Send feedback</a></li>
+        <li><a class="ww-footer__link" href="{{ site.links.license }}">MIT license</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="ww-footer__bottom">
+    <span>© {{ site.time | date: "%Y" }} {{ site.copyright_holder }} · Docs for v{{ site.docs_version }}</span>
+    {%- if site.links.docs_edit_base != "" and page.path %}
+    <a href="{{ site.links.docs_edit_base }}/{{ page.path }}">{% include icon.html name="pencil" %}Edit this page on GitHub</a>
+    {%- endif %}
+  </div>
+</footer>
