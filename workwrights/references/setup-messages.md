@@ -125,3 +125,10 @@ If a run stops early:
 
 **After saving.**
 > I've saved your searches, so next time I can repeat them without asking again. I'll show listings that score 55 or higher out of 100, and read the full posting for any at 65 or higher. Running your first search now.
+
+## 10. Editor first suggestions
+When the user first asks for suggested edits:
+> Before I suggest edits, two quick choices. First, would you like suggested changes (I tell you what to change and why, and you write it) or pre-written sentences (I draft wording from your evidence bank for you to reread and rewrite)? Second, should I list edits in order of relevance to the job, or top to bottom through your resume? I'll remember your answers, and you can change them any time by saying, for example, "switch to pre-written sentences" or "list edits in resume order".
+
+After a pre-written sentence list:
+> These come only from your evidence bank, but please reread each one and put it in your own words before you use it.

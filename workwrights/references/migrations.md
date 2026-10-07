@@ -20,6 +20,8 @@ Treat anything not listed here as required, and ask the user for it.
 | `skill_version` or `schema_version` in settings | Workspace is schema 1 from a release before 0.5 |
 | `setup_deferred` | `none` |
 | `search_mode` | `full` |
+| `edit_style` | `suggest` |
+| `edit_order` | `relevance` |
 | A ledger line field the current Scout or Evaluator writes | Read as empty (null) |
 | A tracker field the user has not mapped | Skip that field when writing to the tracker; do not invent a mapping |
 

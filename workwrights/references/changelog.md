@@ -2,6 +2,10 @@
 
 Newest first. When you tell the user about an update, summarize the entries between their `skill_version` and the current version in two or three plain sentences. Skip internal details.
 
+## 0.9
+- The Editor now asks once whether you want suggested changes or pre-written sentences, and whether to list edits by relevance or in resume order. It remembers your answers, and you can switch any time or override them for one request.
+- Workspace schema: 1 (no migration needed; the new settings have defaults).
+
 ## 0.8
 - In light search mode, the scored list now says that a full Evaluator report uses several times more of your allowance than a short score, so you can choose which listings deserve one.
 - Workspace schema: 1 (no migration needed).
