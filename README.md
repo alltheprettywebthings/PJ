@@ -10,7 +10,7 @@ Workwrights ("wrks" for short in a chat) is a modular career intelligence system
 
 Have:
 - your master resume handy
-- a file atorage system (local folder or cloud folder)
+- a file storage system (local folder or cloud folder)
 - writing sample (optional)
 - a tracker (spreadsheet, Airtable, Notion, etc - optional but recommended)
 
