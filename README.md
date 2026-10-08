@@ -2,8 +2,6 @@
 
 Workwrights ("wrks" for short in a chat) is a modular career intelligence system that you add to your AI as a skill. A small team of agents helps you find jobs, check your fit, tailor your resume and keep going when the search gets hard. You keep your own data: your files live in a workspace folder that you choose and control, and the skill holds only the logic and blank templates. Nothing personal is ever written into the skill.
 
-Want to support development? Buy me a [ko-fi](https://ko-fi.com/bdub2182).
-
 **Latest version: 0.9**  
 [Documentation site](https://alltheprettywebthings.github.io/Workwrights/)  [Changelog](https://github.com/alltheprettywebthings/Workwrights/blob/main/workwrights/references/changelog.md)
 
@@ -35,3 +33,5 @@ The [documentation site](https://alltheprettywebthings.github.io/Workwrights/) c
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+Want to support development? Buy me a [ko-fi](https://ko-fi.com/bdub2182).
