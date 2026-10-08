@@ -8,7 +8,11 @@ Workwrights ("wrks" for short in a chat) is a modular career intelligence system
 
 ## Quickstart
 
-Have your master resume handy. A writing sample is optional, and a tracker is optional.
+Have:
+- your master resume handy
+- a file atorage system (local folder or cloud folder)
+- writing sample (optional)
+- a tracker (spreadsheet, Airtable, Notion, etc - optional but recommended)
 
 1. Download the latest zip from the [releases page](https://github.com/alltheprettywebthings/Workwrights/releases/latest).
 2. Add it to your AI as a skill:
@@ -18,9 +22,9 @@ Have your master resume handy. A writing sample is optional, and a tracker is op
 3. Start a chat and say **"Set up my job search"**. It asks where your workspace should live, then for your master resume. Those are the only two required steps.
 4. Say **"Find me jobs"**.
 
-If you use the zip from this repository's `workwrights/` folder instead, zip it so that `workwrights/` is the root of the zip.
+If you use this repository's `workwrights/` folder instead, zip it so that `workwrights/` is the root of the zip.
 
-Using a free plan? Read [Use a free plan](https://alltheprettywebthings.github.io/Workwrights/tips/free-plan/). Updating from an older version? Read [Update Workwrights](https://alltheprettywebthings.github.io/Workwrights/updating/).
+Using a free plan? Read [Use a free plan](https://alltheprettywebthings.github.io/Workwrights/tips/free-plan/) for how to keep usage low. Updating from an older version? Read [Update Workwrights](https://alltheprettywebthings.github.io/Workwrights/updating/).
 
 ## Learn more
 
