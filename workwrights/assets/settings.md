@@ -35,7 +35,7 @@ schema_version: [written by the Concierge]
 | `application_notes` | [e.g., Application Notes] | A place for the agents to add summaries/reports. |
 | `job_description_url` | [e.g., URL] | Link to the original posting. |
 | `board` | [e.g., Board] | The job board or source where the listing was found. |
-| `pay` | [e.g., Salary] | Salary or compensation data. |
+| `pay` | [e.g., Salary] | Salary or compensation in the standard pay format (see Scout). |
 | `location_remote` | [e.g., Location] | Location or remote/onsite status. |
 
 ## 2. Digital Identity

@@ -77,6 +77,17 @@ Fields:
 - `snapshot_path` (or null), `evaluator_score`, `evaluator_report_path` (null until the Evaluator fills them)
 - `tracking_id`, `tracking_status` (null if not logged)
 
+## Pay format (tracker and tables)
+`pay_raw` in the ledger and snapshot keeps the posted text exactly as written (or `null`). Everything the user sees, meaning the tracker `pay` field and the pay column in tables, uses one standard format, so records sort and compare cleanly. Never invent a figure to fit the format.
+
+- **Annual pay:** thousands with `K` and a plain hyphen with no spaces: `$112.5-150K`, `$90-100K`. Round to one decimal at most.
+- **Single figure:** `$150K`. **Open-ended range:** `$68.9K+`.
+- **Extras** follow in words: `$250-350K + equity`, `$120-140K + bonus`.
+- **Hourly pay stays hourly:** `$45/hr`, or `$40-55/hr` for a range. Do not convert it to a yearly figure.
+- **Estimates** say so and name the source: `est. $102-119K (Idealist)`. Never present an estimate as posted pay.
+- **No pay shown:** `Not posted`.
+- Other currencies keep their symbol or code in the same shape (`CA$90-110K`, `EUR 70-85K`). Other pay periods (monthly, weekly) stay in their own period (`$6K/mo`).
+
 ## Snapshots: `{{PROJECT_ROOT}}/job_search/listings/<job_id>.md`
 Written for listings that get a full-posting read. A short YAML header with the key ledger fields (`job_id`, `company`, `title`, `url`, `posted_date`, `location_raw`, `remote_scope`, `pay_raw`, `flags`, `captured_at`), then the posting text as captured (responsibilities, requirements, pay, location, application notes). Do not paraphrase the posting; copy it. This is the file the Evaluator loads.
 
@@ -99,8 +110,8 @@ Lead with the top five new listings, one line each with score and the main flag.
 
 The user's tracking system holds two kinds of records, separated by `status`: **Prospect** (found and scored, not yet decided) and decided or in-progress records (Applied, Submitted, Contacted, Interview Scheduled, Interviewed, Rejected, Withdrawn, Not Applying). The user keeps one view of Prospects (sorted by Match Score, highest first) and one view of everything else.
 - Scout reads the tracking system at the start of each run to dedupe by company and title. It writes to the tracking system only after the user approves specific prospects, as described below.
-- After each run, in the reply, present the proposed prospects: new listings at or above 55 (card or full score), as a short table with score, role, org, pay, location, board, flags and link. Also list any listings the user handed over directly. Ask which to add.
-- Only after the user says which to add, create records with `status = Prospect`: Company, Title, URL, Match Score (best current score), Notes (flags and basis, e.g. "card_only"), plus Job ID, Board, Pay and Location/Remote where those fields are mapped in settings. Then write the `tracking_id` and `tracking_status` back to the ledger as a new line. Never change an existing record's `status` on your own. The user decides Not Applying, Applied and the rest, and you record it when they tell you (see "Status updates").
+- After each run, in the reply, present the proposed prospects: new listings at or above 55 (card or full score), as a short table with score, role, org, pay (standard pay format), location, board, flags and link. Also list any listings the user handed over directly. Ask which to add.
+- Only after the user says which to add, create records with `status = Prospect`: Company, Title, URL, Match Score (best current score), Notes (flags and basis, e.g. "card_only"), plus Job ID, Board, Pay (in the standard pay format above, never the raw posted text) and Location/Remote where those fields are mapped in settings. Then write the `tracking_id` and `tracking_status` back to the ledger as a new line. Never change an existing record's `status` on your own. The user decides Not Applying, Applied and the rest, and you record it when they tell you (see "Status updates").
 - Listings the user declines are noted in the ledger (`tracking_status: declined_by_user`) so they are not proposed again.
 - **Job ID is the match key.** Every Prospect record carries the ledger `job_id` in the user's tracking system. Match listings to records by Job ID first. Only records with a blank Job ID (older records, or ones the user added) are matched by company and title, and a title-based match is reported to the user as a probable match, not a certain one. When creating a Prospect, always fill Job ID, and write the record id back to the ledger as `tracking_id`.
 - **Status updates.** The user can report a change in conversation, for example "I applied to the Acme role", "pass on the Initech one" or "I have an interview Thursday", so they never have to leave the chat for their tracker.

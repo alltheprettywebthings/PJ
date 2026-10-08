@@ -17,7 +17,7 @@ Treat anything not listed here as required, and ask the user for it.
 
 | Missing | Default |
 |---|---|
-| `skill_version` or `schema_version` in settings | Workspace is schema 1 from a release before 0.5 |
+| `skill_version` or `schema_version` in settings (a two-part `skill_version` such as `0.9` means `0.9.0`) | Workspace is schema 1 from a release before 0.5 |
 | `setup_deferred` | `none` |
 | `search_mode` | `full` |
 | `edit_style` | `suggest` |
