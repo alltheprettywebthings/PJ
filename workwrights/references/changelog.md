@@ -1,6 +1,10 @@
 # What's new in Workwrights
 
-Newest first. When you tell the user about an update, summarize the entries between their `skill_version` and the current version in two or three plain sentences. Skip internal details.
+Newest first. Versions are major.minor.patch; older entries below use two parts (0.9 means 0.9.0). When you tell the user about an update, summarize the entries between their `skill_version` and the current version in two or three plain sentences. Skip internal details.
+
+## 0.10.0
+- Pay in your tracker and in Scout's tables now uses one consistent format: `$112.5-150K`, `$150K`, `$68.9K+`, `$45/hr`, `est. $102-119K (Idealist)` or `Not posted`. The exact posted text is still kept in Scout's own record.
+- Existing tracker entries are not changed. Workspace schema: 1 (no migration needed).
 
 ## 0.9
 - The Editor now asks once whether you want suggested changes or pre-written sentences, and whether to list edits by relevance or in resume order. It remembers your answers, and you can switch any time or override them for one request.

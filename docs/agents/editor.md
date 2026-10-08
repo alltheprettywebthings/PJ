@@ -7,7 +7,7 @@ Editor is **not designed to write for you**. It can draft, but you make the fina
 
 ## Choose how Editor suggests edits
 
-The first time you ask for suggested edits, Editor asks two quick questions (added in v0.9):
+The first time you ask for suggested edits, Editor asks two quick questions (added in v0.9.0):
 
 - **Suggested changes or pre-written sentences.** With suggested changes, Editor tells you what to change and why, and you write it. With pre-written sentences, Editor drafts wording from your evidence bank for you to reread and rewrite. Either way, it uses only claims in your evidence bank and follows your voice profile.
 - **Relevance or resume order.** By relevance, the edits that matter most to the job come first. In resume order, Editor goes from the top of your resume to the bottom, and still marks each edit's priority.

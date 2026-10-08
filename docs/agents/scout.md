@@ -41,3 +41,20 @@ Scout can usually open a browser, search the web for you, scrape the listings an
 ## Keep your tracker up to date
 
 Applied, or got rejected? Tell Scout in the chat ("I applied to the Acme role", "mark Initech as rejected") and it updates your tracker, so you never have to leave the conversation.
+
+## How pay is written
+
+Pay in your tracker and in Scout's tables uses one format (added in v0.10.0), so it sorts and compares cleanly:
+
+| Posted as | Recorded as |
+| --- | --- |
+| $112,500 to $150,000 a year | `$112.5-150K` |
+| $90,000 - $100,000 | `$90-100K` |
+| $150,000 | `$150K` |
+| From $68,900 | `$68.9K+` |
+| $250,000-$350,000 plus equity | `$250-350K + equity` |
+| $45 per hour | `$45/hr` |
+| No pay shown, estimate from a pay site | `est. $102-119K (Idealist)` |
+| No pay shown | `Not posted` |
+
+Scout keeps the exact posted wording in its own record, so nothing is lost. Existing tracker entries are not rewritten.

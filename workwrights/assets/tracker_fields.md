@@ -12,7 +12,7 @@
 | `application_notes` | Long text | Summaries, report paths, file names and dated status notes added by the agents. |
 | `job_description_url` | URL | Link to the original posting. |
 | `board` | Text | The job board or source where the listing was found. |
-| `pay` | Text | Salary or compensation as posted. |
+| `pay` | Text | Salary or compensation in the standard format: `$112.5-150K`, `$150K`, `$68.9K+`, `$45/hr`, `est. $102-119K (Idealist)`, or `Not posted`. The exact posted text is kept in the Scout ledger. |
 | `location_remote` | Text | Location or remote/onsite status. |
 
 Tips:

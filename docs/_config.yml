@@ -12,7 +12,7 @@ baseurl: "https://alltheprettywebthings.github.io/Workwrights/"
 
 # Shown in the footer and the version label. Pseudonym on purpose: never add a personal name.
 copyright_holder: alltheprettywebthings
-docs_version: "0.9"
+docs_version: "0.10.0"
 
 # Project links. (Named "links", not "github", so it never clashes with GitHub's own site.github data.)
 links:

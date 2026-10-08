@@ -5,7 +5,7 @@ description: "Workwrights (wrks): run a job search from your own files. Set up a
 
 # Workwrights
 
-**Skill version:** 0.9 · **Workspace schema:** 1 (bump the version with every release; bump the schema only when a workspace file's structure changes, see `references/migrations.md`)
+**Skill version:** 0.10.0 · **Workspace schema:** 1 (bump the version with every release; bump the schema only when a workspace file's structure changes, see `references/migrations.md`)
 
 The user may call this system "Workwrights", "wrks", or "the job search system". All three mean this skill. Its personas are the wrights, each with a craft of their own.
 
@@ -22,7 +22,7 @@ This system helps one person run a job search with five personas that share one 
 
 ## Updates and older workspaces
 
-The user's workspace may have been created by an older version of this skill. Compare `schema_version` and `skill_version` in `profile/settings.md` (under Setup Status) with the versions at the top of this file.
+The user's workspace may have been created by an older version of this skill. Compare `schema_version` and `skill_version` in `profile/settings.md` (under Setup Status) with the versions at the top of this file. Compare versions part by part as whole numbers, so 0.10.0 is newer than 0.9.0, and a missing part counts as 0 (`0.9` is `0.9.0`).
 
 - **Both match:** carry on.
 - **Either stamp is missing:** the workspace predates versioning. Treat it as schema 1 and skill version "before 0.5", and handle it as below.
