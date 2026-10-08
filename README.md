@@ -14,7 +14,7 @@ Have:
 - writing sample (optional)
 - a tracker (spreadsheet, Airtable, Notion, etc - optional but recommended)
 
-1. Download the latest zip from the [releases page](https://github.com/alltheprettywebthings/Workwrights/releases/latest).
+1. Download the latest [release](https://github.com/alltheprettywebthings/Workwrights/releases/latest).
 2. Add it to your AI as a skill:
     - **Claude (web or desktop):** go to **Customize > Skills**, click **Add**, upload the zip, and make sure the skill is enabled. Skills need code execution to be turned on.
     - **Claude Code:** unzip it into `~/.claude/skills/` (or `.claude/skills/` in a project), so you have `~/.claude/skills/workwrights/`.
