@@ -33,5 +33,3 @@ The [documentation site](https://alltheprettywebthings.github.io/Workwrights/) c
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-Want to support development? Buy me a [ko-fi](https://ko-fi.com/bdub2182).
